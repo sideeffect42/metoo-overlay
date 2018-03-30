@@ -1,0 +1,13 @@
+diff --git a/media/libstagefright/binding/MoofParser.cpp b/media/libstagefright/binding/MoofParser.cpp
+index 147670a51..da26b7479 100644
+--- a/media/libstagefright/binding/MoofParser.cpp
++++ b/media/libstagefright/binding/MoofParser.cpp
+@@ -10,7 +10,7 @@
+ 
+ #include "prlog.h"
+ 
+-#ifdef PR_LOGGING
++#if 0
+ extern PRLogModuleInfo* GetDemuxerLog();
+ 
+ /* Polyfill __func__ on MSVC to pass to the log. */
