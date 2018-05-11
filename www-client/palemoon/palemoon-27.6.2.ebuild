@@ -89,8 +89,6 @@ src_prepare() {
 		"${S}/xpcom/io/nsAppFileLocationProvider.cpp" \
 		|| die "sed failed to replace plugin path for 64bit!"
 
-	#ln -s "${S}/gfx/skia/trunk" "${S}/gfx/skia/skia"
-
 	eapply "${FILESDIR}/${PN}-fix-skia-path.patch"
 	eapply "${FILESDIR}/libstagefright-broken-logging.patch"
 
