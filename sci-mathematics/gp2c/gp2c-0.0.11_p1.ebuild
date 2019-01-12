@@ -17,7 +17,10 @@ S="${WORKDIR}/${MY_P}"
 
 src_configure() {
 	# Find pari.cfg
-	pari_cfg=$(find "${EPREFIX}"/usr/share/doc/pari-* -name pari.cfg | sort -r | head -n 1)
+	inst_pari_version=$(best_version sci-mathematics/pari)
+	pari_cfg="${EPREFIX}/usr/share/doc/${inst_pari_version##*/}/pari.cfg"
+	test -f "${pari_cfg}" || die "Could not find pari.cfg!"
+	elog "Found PARI cfg: ${pari_cfg}"
 
 	econf --with-paricfg="${pari_cfg}"
 }
