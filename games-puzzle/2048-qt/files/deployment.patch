@@ -1,0 +1,13 @@
+diff --git a/deployment.pri b/deployment.pri
+index 839b3b5..a2d9027 100644
+--- a/deployment.pri
++++ b/deployment.pri
+@@ -14,7 +14,7 @@ android-no-sdk {
+     INSTALLS += target
+ } else:unix {
+     isEmpty(target.path) {
+-        target.path = /opt/$${TARGET}/bin
++        target.path = $${PREFIX}/bin
+         export(target.path)
+     }
+     INSTALLS += target
