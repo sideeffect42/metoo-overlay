@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription>
+		QuickJS is a small and embeddable JavaScript engine. It aims to support the latest
+		ECMAScript specification.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/bellard/quickjs/issues</bugs-to>
+		<remote-id type="github">bellard/quickjs</remote-id>
+	</upstream>
+</pkgmetadata>
